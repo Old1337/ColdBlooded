@@ -1,0 +1,162 @@
+/* Start Global Rules */
+
+* {
+  --webkit-box-sizing--: border-box;
+  --moz-box-sizing--: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-color: #111927;
+  --transparent-color: rgb(15 116 143/ 70%);
+  --p-color: #9fef00;
+  --w-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+ul {
+  list-style: none;
+}
+li {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+header {
+  background-color: var(--main-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header img {
+  width: 140px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  flex-grow: 1;
+}
+header ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header ul li {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #808080;
+  font-size: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  header img {
+    width: 155px;
+  }
+}
+
+header ul li a:hover {
+  padding-right: 10px;
+  color: white;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+i {
+  color: #808080;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.landing {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  padding-bottom: 170px;
+}
+.landing .content h1 {
+  font-size: 50px;
+  color: var(--main-color);
+
+  width: 100%;
+  text-align: center;
+}
+
+.landing h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #808080;
+}
+.landing h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #808080;
+}
+.landing h3 span {
+  color: var(--main-color);
+  font-size: 30px;
+}
+
+.landing p {
+  text-align: center;
+  width: 100%;
+  line-height: 3;
+  font-size: 30px;
+  color: #808080;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .landing p {
+    font-size: 18px;
+  }
+}
+
+.landing p span {
+  color: var(--main-color);
+}
+footer {
+  background-color: var(--main-color);
+  padding-top: 20px;
+  color: #808080;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+::selection {
+  color: var(--p-color);
+}
