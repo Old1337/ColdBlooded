@@ -107,6 +107,8 @@ i {
   display: flex;
   justify-content: center;
   background-color: aliceblue;
+  background-size: 1vh;
+  padding-top: 100px;
   padding-bottom: 170px;
 }
 .landing .content h1 {
